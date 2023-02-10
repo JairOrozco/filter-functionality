@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <title>Filter</title>
+</head>
+<body>
+
+    <h1>Kart Individual</h1>
+    
+    <form id="filter">
+
+        <legend>Filtro</legend>
+
+            <select name="generalFilter" id="generalFilter">
+                <option value="generalFilter">Filtrar por</option>
+            </select>
+
+            <select name="characters" id="characters" class="hide">
+                <option value="selectCharacter">Selecciona un Personaje</option>
+            </select>
+
+            <select name="karts" id="karts" class="hide">
+                <option value="selectKart">Selecciona un Kart</option>
+            </select>
+
+    </form>
+
+
+    <section id="containerCards" class="containerCards">
+    </section>
+    
+
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>

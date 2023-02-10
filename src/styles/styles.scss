@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    width: 100%;
+    padding: 30px 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    
+}
+
+form {
+    width: 100%;
+    padding: 20px 15px;
+    legend {
+        font-family: 'Poppins', sans-serif;
+    }
+    select {
+        padding: 5px 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        outline: none;
+        border: 2px solid rgb(23, 77, 123);
+    }
+}
+
+.containerCards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 160px);
+    grid-template-rows: repeat(auto-fill);
+    place-content: center;
+    place-items: center;
+    gap: 10px;
+    .card {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 7px;
+        .containerImg {
+            width: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 100%;
+            }
+        }
+        p {
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            text-align: center;
+        }
+        .cardButton {
+            width: 90%;
+            height: 30px;
+            border: none;
+            border-radius: 7px;
+            outline: none;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+
+.noInCollectionButton {
+    background: #3682BA;
+}
+
+.inCollectionButton {
+    background: green;
+}
